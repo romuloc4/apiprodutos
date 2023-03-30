@@ -21,7 +21,7 @@ namespace ApiProdutos.Tests.Helpers
         /// <summary>
         /// Criando um conteúdo JSON para envio na requisição da API
         /// </summary>
-        /// <param name="request">Objeto que srá enviado na requisição</param>
+        /// <param name="request">Objeto que será enviado na requisição</param>
         /// <returns>Conteúdo da requisição em JSON</returns>
         public static StringContent CreateContent<TRequest>(TRequest request)
            where TRequest : class

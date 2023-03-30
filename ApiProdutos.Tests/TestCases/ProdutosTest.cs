@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,17 @@ namespace ApiProdutos.Tests.TestCases
         public ProdutosTest()
         {
             _httpClient = new HttpClient();
+
+            #region Adicionar o token de autorização no objeto HttpClient
+
+            var loginTest = new LoginTest();
+            var response = loginTest.Post_Login_Returns_Ok().Result;
+
+            _httpClient.DefaultRequestHeaders.Authorization
+                = new AuthenticationHeaderValue("Bearer", response.AccessToken);
+
+            #endregion
+
             _faker = new Faker("pt_BR");
         }
 

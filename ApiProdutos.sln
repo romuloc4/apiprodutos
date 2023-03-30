@@ -5,15 +5,15 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiProdutos.Services", "ApiProdutos.Services\ApiProdutos.Services.csproj", "{29F41F65-A347-4A10-9CF4-05C712A82B71}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Services Layer", "1-Services Layer", "{8D075D59-18B2-4639-B6EF-55642DE41AB9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services Layer", "1 - Services Layer", "{8D075D59-18B2-4639-B6EF-55642DE41AB9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository Layer", "Repository Layer", "{A7B20A72-8105-467F-8137-29584107A40B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Repository Layer", "2 - Repository Layer", "{A7B20A72-8105-467F-8137-29584107A40B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{925C6036-5F13-438F-A33A-06DD1DFE3368}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Tests", "3 - Tests", "{925C6036-5F13-438F-A33A-06DD1DFE3368}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiProdutos.Infra.Data", "ApiProdutos.Infra.Data\ApiProdutos.Infra.Data.csproj", "{5DEB08E3-022C-474E-8069-4A63C3A3B36D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiProdutos.Tests", "ApiProdutos.Tests\ApiProdutos.Tests.csproj", "{6DEE547C-EDCA-4A33-9356-2598A0C6A195}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiProdutos.Tests", "ApiProdutos.Tests\ApiProdutos.Tests.csproj", "{6DEE547C-EDCA-4A33-9356-2598A0C6A195}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -13,46 +13,16 @@ namespace ApiProdutos.Infra.Data.Repositories
     /// <summary>
     /// Classe de repositorio pra produto
     /// </summary>
-    public class ProdutoRepository : IProdutoRepository
+    public class ProdutoRepository : BaseRepository<Produto>, IProdutoRepository
     {
         //atributo
         private readonly SqlServerContext _sqlServerContext;
 
         //contrutor pra inicializar o atibuto
         public ProdutoRepository(SqlServerContext sqlServerContext)
+            : base (sqlServerContext)
         {
             _sqlServerContext = sqlServerContext;
-        }
-
-        public void Add(Produto entity)
-        {
-            _sqlServerContext.Produto.Add(entity);
-            _sqlServerContext.SaveChanges();
-        }
-
-        public void Update(Produto entity)
-        {
-            _sqlServerContext.Entry(entity).State = EntityState.Modified;
-            _sqlServerContext.SaveChanges();
-        }
-
-        public void Delete(Produto entity)
-        {
-            _sqlServerContext.Produto.Remove(entity);
-            _sqlServerContext.SaveChanges();
-        }
-
-        public List<Produto> GetAll()
-        {
-            return _sqlServerContext.Produto
-               .OrderBy(p => p.Nome)
-               .ToList();
-        }
-
-        public Produto Get(Guid id)
-        {
-            return _sqlServerContext.Produto
-                .Find(id);
         }
     }
 }

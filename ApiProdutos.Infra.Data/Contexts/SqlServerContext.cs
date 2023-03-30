@@ -24,8 +24,10 @@ namespace ApiProdutos.Infra.Data.Contexts
         {
             //adicionando as classes de mapeamento
             modelBuilder.ApplyConfiguration(new ProdutoMap());
+            modelBuilder.ApplyConfiguration(new UsuarioMap());
         }
 
         public DbSet<Produto> Produto { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
     }
 }
